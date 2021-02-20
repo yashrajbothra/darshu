@@ -718,10 +718,7 @@ bday_code.addEventListener('keypress', function (e) {
 
     } else {
       tl.to(".last-message", 1, {
-        scale: 1.2,
-        x: 10,
-        backgroundColor: "#ffc107",
-        color: "#fff"
+        opacity: 1
       });
     }
   }
