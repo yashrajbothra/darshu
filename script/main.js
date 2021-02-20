@@ -672,3 +672,11 @@ canvas.addEventListener( 'mouseup', function( e ) {
 
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
+
+let bday_code = document.getElementById("bday_code");
+bday_code.addEventListener('keypress', function(e){
+  let s = bday_code.value;
+  if(s=="thankyou" || s=="thanku" || s=="thanks" || s=="thank"){
+    
+  }
+});
