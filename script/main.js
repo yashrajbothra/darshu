@@ -705,13 +705,19 @@ var tommorow = new Date("Feburary 21, 2021 20:45");
 let bday_code = document.getElementById("bday_code");
 bday_code.addEventListener('keypress', function (e) {
   let s = bday_code.value;
-  if (s == "thankyou" || s == "thanku" || s == "thanks" || s == "thank") {
-    if (today >= tommorow) {
-      tl.to(".last-message", 0.1, {
-        visibility: "visible"
-      })
-    } else {
+  var ideaTextTrans = {
+    opacity: 0,
+    y: -20,
+    rotationX: 5,
+    skewX: "15deg"
+  };
 
+  var tl = new TimelineMax();
+  if (s == "thankyou" || s == "thanku" || s == "thanks") {
+    if (today >= tommorow) {
+
+    } else {
+      tl.staggerFrom(".last-message", 1, ideaTextTrans, 1.2);
     }
   }
 });
