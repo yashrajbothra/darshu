@@ -207,6 +207,34 @@ const animationTimeline = () => {
       }
     )
     .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 2,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1,
+      },
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 2,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      1,
+      {
+        scale: 1,
+      }
+    )
+    .to(
       ".idea-5",
       0.3,
       {
@@ -679,7 +707,9 @@ bday_code.addEventListener('keypress', function (e) {
   let s = bday_code.value;
   if (s == "thankyou" || s == "thanku" || s == "thanks" || s == "thank") {
     if (today >= tommorow) {
-      
+      tl.to(".last-message", 0.1, {
+        visibility: "visible"
+      })
     } else {
 
     }

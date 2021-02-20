@@ -229,11 +229,7 @@ body {
   margin: 10px 0 0;
 }
 
-.nine p {
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
+.nine p,
 .last-message p {
   font-size: 2rem;
   font-weight: lighter;
@@ -333,7 +329,8 @@ body {
     font-size: 1.4rem;
   }
 
-  .nine p {
+  .nine p,
+  .last-message p {
     font-size: 1.5rem;
     font-weight: lighter;
   }
@@ -348,7 +345,7 @@ canvas {
   z-index: 100;
 }
 input[type="text"] {
-  width: 35%;
+  width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
