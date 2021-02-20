@@ -98,6 +98,10 @@ body {
   display: inline-block;
 }
 
+.clickme strong {
+  margin-right: 20px;
+}
+
 .five .idea-5 {
   font-size: 4rem;
 }
@@ -331,4 +335,15 @@ canvas {
 	display: block;
   position: absolute;
   z-index: 100;
+}
+input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 99;
+  opacity: 0;
 }
