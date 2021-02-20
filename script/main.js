@@ -717,9 +717,7 @@ bday_code.addEventListener('keypress', function (e) {
     if (today >= tommorow) {
 
     } else {
-      tl.to(".last-message", 1, {
-        opacity: 1
-      });
+      document.getElementById("last-message").style.opacity = 1
     }
   }
 });

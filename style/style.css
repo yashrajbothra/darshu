@@ -230,7 +230,7 @@ body {
 }
 
 .nine p,
-.last-message p {
+.last-message {
   font-size: 2rem;
   font-weight: lighter;
 }
@@ -330,11 +330,11 @@ body {
   }
 
   .nine p,
-  .last-message p {
+  .last-message {
     font-size: 1.5rem;
     font-weight: lighter;
   }
-  .last-message p {
+  .last-message {
     opacity: 0;
   }
 }
