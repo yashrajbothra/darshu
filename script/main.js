@@ -339,13 +339,31 @@ const animationTimeline = () => {
         rotation: 90
       },
       "+=1"
-    );
+    )
+    .to(
+      "canvas",
+      0.1,
+      {
+        zIndex: 0
+      },
+      "+=1"
+    )
+    .to(
+      "#bday_code",
+      0.5,
+      {
+        opacity: 1,
+        zIndex: 1000
+      },
+      "+=1"
+    )
+    ;
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
 
   // Restart Animation on click
-  const replyBtn = document.getElementById("replay");
+  const replyBtn = document.getElementById("clickme");
   replyBtn.addEventListener("click", () => {
     tl.restart();
   });
