@@ -671,8 +671,4 @@ canvas.addEventListener( 'mouseup', function( e ) {
 });
 
 // once the window loads, we are ready for some fireworks!
-var bday_code = document.getElementById( 'bday_code' );
-bday_code.addEventListener('keypress', function( e ) {
-	e.preventDefault();
-	mousedown = false;
-})
+window.onload = loop;
