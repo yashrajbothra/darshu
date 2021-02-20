@@ -234,6 +234,11 @@ body {
   font-weight: lighter;
 }
 
+.last-message p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
 #replay {
   z-index: 3;
   cursor: pointer;
