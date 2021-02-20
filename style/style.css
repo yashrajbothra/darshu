@@ -92,7 +92,7 @@ body {
   right: 0;
 }
 
-.idea-3 strong {
+.idea-3 strong,.clickme strong {
   padding: 3px 5px;
   border-radius: 3px;
   display: inline-block;
@@ -325,4 +325,10 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+canvas {
+	cursor: crosshair;
+	display: block;
+  position: absolute;
+  z-index: 100;
 }
