@@ -384,7 +384,7 @@ const animationTimeline = () => {
         zIndex: 1000
       },
       "+=1"
-    );
+    ).pause();
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
@@ -395,6 +395,21 @@ const animationTimeline = () => {
     tl.restart();
   });
 };
+
+var today = new Date();
+var tommorow = new Date("Feburary 21, 2021 20:45");
+let bday_code = document.getElementById("bday_code");
+bday_code.addEventListener('keyup', function (e) {
+  let s = bday_code.value;
+  if (s == "thankyou" || s == "thanku" || s == "thanks") {
+    if (today >= tommorow) {
+      tl.staggerFrom(".last-message", 1, ideaTextTrans, 1.2)
+    } else {
+      tl.staggerFrom(".last-message", 1, ideaTextTrans, 1.2)
+      // document.getElementById("last-message").style.opacity = 1
+    }
+  }
+});
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
@@ -699,26 +714,3 @@ canvas.addEventListener('mouseup', function (e) {
 
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
-
-var today = new Date();
-var tommorow = new Date("Feburary 21, 2021 20:45");
-let bday_code = document.getElementById("bday_code");
-bday_code.addEventListener('keypress', function (e) {
-  let s = bday_code.value;
-  var ideaTextTrans = {
-    opacity: 0,
-    y: -20,
-    rotationX: 5,
-    skewX: "15deg"
-  };
-
-  var tl = new TimelineMax();
-  if (s == "thankyou" || s == "thanku" || s == "thanks") {
-    if (today >= tommorow) {
-
-    } else {
-      document.getElementById("last-message").style.opacity = 1
-    }
-  }
-});
-

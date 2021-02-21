@@ -335,7 +335,7 @@ body {
     font-weight: lighter;
   }
   .last-message {
-    opacity: 0;
+    /* opacity: 0; */
   }
 }
 .lydia-dp {
@@ -363,5 +363,5 @@ input[type="text"] {
 }
 
 .last-message{
-  opacity: 0;
+  /* opacity: 0; */
 }
