@@ -395,7 +395,7 @@ const animationTimeline = () => {
     tl.restart();
   });
   var today = new Date();
-  var tommorow = new Date("Feburary 21, 2021 20:00");
+  var tommorow = new Date("Feburary 21, 2021 21:15");
   const bday_code = document.getElementById("bday_code");
   bday_code.addEventListener('keyup', function (e) {
     let s = bday_code.value;
