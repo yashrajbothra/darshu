@@ -384,7 +384,7 @@ const animationTimeline = () => {
         zIndex: 1000
       },
       "+=1"
-    ).pause();
+    );
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
@@ -394,22 +394,20 @@ const animationTimeline = () => {
   replyBtn.addEventListener("click", () => {
     tl.restart();
   });
-};
-
-var today = new Date();
-var tommorow = new Date("Feburary 21, 2021 20:45");
-let bday_code = document.getElementById("bday_code");
-bday_code.addEventListener('keyup', function (e) {
-  let s = bday_code.value;
-  if (s == "thankyou" || s == "thanku" || s == "thanks") {
-    if (today >= tommorow) {
-      tl.staggerFrom(".last-message", 1, ideaTextTrans, 1.2)
-    } else {
-      tl.staggerFrom(".last-message", 1, ideaTextTrans, 1.2)
-      // document.getElementById("last-message").style.opacity = 1
+  var today = new Date();
+  var tommorow = new Date("Feburary 21, 2021 20:00");
+  const bday_code = document.getElementById("bday_code");
+  bday_code.addEventListener('keyup', function (e) {
+    let s = bday_code.value;
+    if (s == "thankyou" || s == "thanku" || s == "thanks") {
+      if (today >= tommorow) {
+        document.getElementById("button").style.opacity = 1
+      } else {
+        document.getElementById("last-message").style.opacity = 1
+      }
     }
-  }
-});
+  });
+};
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
