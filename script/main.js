@@ -32,59 +32,59 @@ const animationTimeline = () => {
     .to(".container", 0.1, {
       visibility: "visible"
     })
-    // .from(".one", 0.7, {
-    //   opacity: 0,
-    //   y: 10
-    // })
-    // .from(".two", 0.8, {
-    //   opacity: 0,
-    //   y: 10
-    // })
-    // .from(".twoandhalf", 0.8, {
-    //   opacity: 0,
-    //   y: 10
-    // })
-    // .to(
-    //   ".one",
-    //   1,
-    //   {
-    //     opacity: 0,
-    //     y: 10
-    //   },
-    //   "+=2.5"
-    // )
-    // .to(
-    //   ".two",
-    //   1,
-    //   {
-    //     opacity: 0,
-    //     y: 10
-    //   },
-    //   "-=1"
-    // )
-    // .to(
-    //   ".twoandhalf",
-    //   1,
-    //   {
-    //     opacity: 0,
-    //     y: 10
-    //   },
-    //   "-=1"
-    // )
-    // .from(".three", 0.7, {
-    //   opacity: 0,
-    //   y: 10
-    //   // scale: 0.7
-    // })
-    // .to(
-    //   ".three",
-    //   0.7,
-    //   {
-    //     opacity: 0,
-    //     y: 10
-    //   },
-    //   "+=2"
-    // )
+    .from(".one", 0.7, {
+      opacity: 0,
+      y: 10
+    })
+    .from(".two", 0.8, {
+      opacity: 0,
+      y: 10
+    })
+    .from(".twoandhalf", 0.8, {
+      opacity: 0,
+      y: 10
+    })
+    .to(
+      ".one",
+      1,
+      {
+        opacity: 0,
+        y: 10
+      },
+      "+=2.5"
+    )
+    .to(
+      ".two",
+      1,
+      {
+        opacity: 0,
+        y: 10
+      },
+      "-=1"
+    )
+    .to(
+      ".twoandhalf",
+      1,
+      {
+        opacity: 0,
+        y: 10
+      },
+      "-=1"
+    )
+    .from(".three", 0.7, {
+      opacity: 0,
+      y: 10
+      // scale: 0.7
+    })
+    .to(
+      ".three",
+      0.7,
+      {
+        opacity: 0,
+        y: 10
+      },
+      "+=2"
+    )
     .from(
       ".wish-msg",
       0.7,
