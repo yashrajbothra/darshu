@@ -32,56 +32,163 @@ const animationTimeline = () => {
     .to(".container", 0.1, {
       visibility: "visible"
     })
-    .from(".one", 0.7, {
-      opacity: 0,
-      y: 10
-    })
-    .from(".two", 0.8, {
-      opacity: 0,
-      y: 10
-    })
-    .from(".twoandhalf", 0.8, {
-      opacity: 0,
-      y: 10
-    })
-    .to(
-      ".one",
-      1,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "+=2.5"
-    )
-    .to(
-      ".two",
-      1,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "-=1"
-    )
-    .to(
-      ".twoandhalf",
-      1,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "-=1"
-    )
-    .from(".three", 0.7, {
-      opacity: 0,
-      y: 10
-      // scale: 0.7
-    })
-    .to(
-      ".three",
+    // .from(".one", 0.7, {
+    //   opacity: 0,
+    //   y: 10
+    // })
+    // .from(".two", 0.8, {
+    //   opacity: 0,
+    //   y: 10
+    // })
+    // .from(".twoandhalf", 0.8, {
+    //   opacity: 0,
+    //   y: 10
+    // })
+    // .to(
+    //   ".one",
+    //   1,
+    //   {
+    //     opacity: 0,
+    //     y: 10
+    //   },
+    //   "+=2.5"
+    // )
+    // .to(
+    //   ".two",
+    //   1,
+    //   {
+    //     opacity: 0,
+    //     y: 10
+    //   },
+    //   "-=1"
+    // )
+    // .to(
+    //   ".twoandhalf",
+    //   1,
+    //   {
+    //     opacity: 0,
+    //     y: 10
+    //   },
+    //   "-=1"
+    // )
+    // .from(".three", 0.7, {
+    //   opacity: 0,
+    //   y: 10
+    //   // scale: 0.7
+    // })
+    // .to(
+    //   ".three",
+    //   0.7,
+    //   {
+    //     opacity: 0,
+    //     y: 10
+    //   },
+    //   "+=2"
+    // )
+    .from(
+      ".wish-msg",
       0.7,
       {
+        rotationX: 15,
+        rotationZ: -10,
+        skewY: "-5deg",
+        y: 50,
+        z: 10,
+        opacity: 0
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-1",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-1",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".msg-2",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-2",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".msg-3",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-3",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".msg-4",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-4",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".msg-5",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-5",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".msg-6",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-6",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".msg-7",
+      0.9,
+      {
+        opacity: 1
+      },
+      "+=1"
+    )
+    .to(
+      ".msg-7",
+      0.7, ideaTextTransLeave, "+=1.5"
+    )
+    .to(
+      ".wish-msg",
+      0.5,
+      {
+        scale: 0.2,
         opacity: 0,
-        y: 10
+        y: -150
       },
       "+=2"
     )
@@ -291,12 +398,6 @@ const animationTimeline = () => {
       },
       "-=2"
     )
-    .from(".hat", 0.5, {
-      x: -50,
-      y: 350,
-      rotation: -180,
-      opacity: 0
-    })
     .staggerFrom(
       ".wish-hbd span",
       0.7,
